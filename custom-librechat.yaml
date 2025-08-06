@@ -16,7 +16,25 @@ mcpServers:
       - "-y"
       - "@modelcontextprotocol/server-postgres"
       - "${ZAPPY_DATABASE_URI}"
-    serverInstructions: "Access and analyze Postgres databases with read-only queries."
+    serverInstructions: "Access and analyze Zappy Postgres databases with read-only queries."
+    startup: true
+  postgres-rtf:
+    type: stdio
+    command: npx
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-postgres"
+      - "${RTF_DATABASE_URI}"
+    serverInstructions: "Access and analyze Real Time Feedback (RTF) Postgres databases with read-only queries."
+    startup: true
+  postgres-usa-rs:
+    type: stdio
+    command: npx
+    args:
+      - "-y"
+      - "@modelcontextprotocol/server-postgres"
+      - "${USARS_DATABASE_URI}"
+    serverInstructions: "Access and analyze USA Restaurant Suppliers (USA-RS) Postgres databases with read-only queries."
     startup: true
   fetch:
     type: stdio
