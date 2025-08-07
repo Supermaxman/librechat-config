@@ -100,17 +100,18 @@ mcpServers:
     type: "streamable-http"
     initTimeout: 150000
     url: "https://outlook-mcp-oauth.max-daa.workers.dev/mcp"
-  sentry:
-    command: npx
-    args:
-      - "-y"
-      - "@sentry/mcp-server@latest"
-    serverInstructions: "Sentry error monitoring MCP tools"
-    startup: true
-    env:
-      SENTRY_ACCESS_TOKEN: "${SENTRY_API_TOKEN}"
-      SENTRY_HOST: "${SENTRY_HOST}"
-      OPENAI_API_KEY: "${OPENAI_API_KEY}"
+  # busted, try different mcp option
+  # sentry:
+  #   command: npx
+  #   args:
+  #     - "-y"
+  #     - "@sentry/mcp-server@latest"
+  #   serverInstructions: "Sentry error monitoring MCP tools"
+  #   startup: true
+  #   env:
+  #     SENTRY_ACCESS_TOKEN: "${SENTRY_API_TOKEN}"
+  #     SENTRY_HOST: "${SENTRY_HOST}"
+  #     OPENAI_API_KEY: "${OPENAI_API_KEY}"
 
 endpoints:
   agents:
