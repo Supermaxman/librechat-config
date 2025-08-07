@@ -100,7 +100,16 @@ mcpServers:
     type: "streamable-http"
     initTimeout: 150000
     url: "https://outlook-mcp-oauth.max-daa.workers.dev/mcp"
-    
+  sentry:
+    command: npx
+    args:
+      - "-y"
+      - "@sentry/mcp-server@latest"
+      - "--access-token=${SENTRY_API_TOKEN}"
+      - "--host=${SENTRY_HOST}"
+    serverInstructions: "Sentry error monitoring MCP tools"
+    startup: true
+
 endpoints:
   agents:
     recursionLimit: 100
