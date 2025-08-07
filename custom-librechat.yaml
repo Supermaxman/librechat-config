@@ -71,6 +71,15 @@ mcpServers:
     env:
       DEXCOM_USERNAME: "${DEXCOM_USERNAME}"
       DEXCOM_PASSWORD: "${DEXCOM_PASSWORD}"
+  openai:
+    type: stdio
+    command: uvx
+    args:
+      - "mcp-server-openai"
+    serverInstructions: true
+    startup: true
+    env:
+      OPENAI_ADMIN_API_KEY: "${OPENAI_ADMIN_API_KEY}"
   zoom:
     type: stdio
     command: npx
