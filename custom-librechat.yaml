@@ -100,10 +100,6 @@ mcpServers:
     type: "streamable-http"
     initTimeout: 150000
     url: "https://outlook-mcp-oauth.max-daa.workers.dev/mcp"
-  sentry:
-    type: "streamable-http"
-    initTimeout: 150000
-    url: "https://mcp.sentry.dev/mcp"
     
 endpoints:
   agents:
