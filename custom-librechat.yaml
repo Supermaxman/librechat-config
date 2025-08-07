@@ -134,9 +134,9 @@ endpoints:
           - deepseek-reasoner
         fetch: false
       titleConvo: true
-      titleModel: "openai/gpt-4.1-mini"
+      titleModel: "openai/gpt-5-mini"
       summarize: false
-      summaryModel: "openai/gpt-4.1-mini"
+      summaryModel: "openai/gpt-5-mini"
       modelDisplayLabel: "DeepSeek"
               
     # Mistral AI API
@@ -202,9 +202,9 @@ endpoints:
         fetch: false
       titleConvo: true
       titleMethod: "completion"
-      titleModel: "openai/gpt-4.1-mini"
+      titleModel: "openai/gpt-5-mini"
       summarize: false
-      summaryModel: "openai/gpt-4.1-mini"
+      summaryModel: "openai/gpt-5-mini"
       forcePrompt: false
       modelDisplayLabel: "Mistral"
       dropParams:
@@ -228,9 +228,9 @@ endpoints:
           - sonar-reasoning-pro
         fetch: false # fetching list of models is not supported
       titleConvo: true
-      titleModel: "openai/gpt-4.1-mini"
+      titleModel: "openai/gpt-5-mini"
       summarize: false
-      summaryModel: "openai/gpt-4.1-mini"
+      summaryModel: "openai/gpt-5-mini"
       forcePrompt: false
       dropParams:
         - "stop"
@@ -254,9 +254,9 @@ endpoints:
         fetch: false
       titleConvo: true
       titleMethod: "completion"
-      titleModel: "openai/gpt-4.1-mini"
+      titleModel: "openai/gpt-5-mini"
       summarize: false
-      summaryModel: "openai/gpt-4.1-mini"
+      summaryModel: "openai/gpt-5-mini"
       forcePrompt: false
       modelDisplayLabel: "Grok"
 
@@ -618,9 +618,9 @@ endpoints:
       dropParams:
         - "stop"
       titleConvo: true
-      titleModel: "openai/gpt-4.1-mini"
+      titleModel: "openai/gpt-5-mini"
       summarize: false
-      summaryModel: "openai/gpt-4.1-mini"
+      summaryModel: "openai/gpt-5-mini"
       forcePrompt: false
       modelDisplayLabel: "OpenRouter"
 
@@ -716,6 +716,6 @@ endpoints:
           - upstage/SOLAR-10.7B-Instruct-v1.0
         fetch: false
       titleConvo: true
-      titleModel: "openai/gpt-4.1-mini"
+      titleModel: "openai/gpt-5-mini"
       dropParams:
         - "top_p"
