@@ -105,10 +105,12 @@ mcpServers:
     args:
       - "-y"
       - "@sentry/mcp-server@latest"
-      - "--access-token=${SENTRY_API_TOKEN}"
-      - "--host=${SENTRY_HOST}"
     serverInstructions: "Sentry error monitoring MCP tools"
     startup: true
+    env:
+      SENTRY_ACCESS_TOKEN: "${SENTRY_API_TOKEN}"
+      SENTRY_HOST: "${SENTRY_HOST}"
+      OPENAI_API_KEY: "${OPENAI_API_KEY}"
 
 endpoints:
   agents:
