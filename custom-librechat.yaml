@@ -12,14 +12,14 @@ webhooks:
   # /api/webhooks/test
   test:
     # MaxAI
-    agent_id: 'agent_aVd_ioFfqYHiBqWczltzt'
-    user: '${WEBHOOK_USER}'
+    agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+    user: "${WEBHOOK_USER}"
     prompt: "Please process this request:"
     auth:
       type: "header"
       header: "Authorization"
       prefix: "Bearer "
-      secret: "${TEST_SECRET}"
+      secret: "${TEST_WEBHOOK_SECRET}"
   # email_received:
   #   agent_id: 'agent-email'
   #   user: 'admin@example.com' # user's email; if your ID is the same as email, reuse it here
