@@ -13,7 +13,7 @@ webhooks:
   test:
     # MaxAI
     agent_id: 'agent_aVd_ioFfqYHiBqWczltzt'
-    user: 'max@aiescape.io'
+    user: '${WEBHOOK_USER}'
     prompt: "Please process this request:"
     auth:
       type: "header"
