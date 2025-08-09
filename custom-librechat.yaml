@@ -41,11 +41,12 @@ webhooks:
 mcpServers:
   postgres-zappy:
     type: stdio
-    command: npx
+    command: uvx
     args:
-      - "-y"
-      - "@modelcontextprotocol/server-postgres"
-      - "${ZAPPY_DATABASE_URI}"
+      - "postgres-mcp"
+      - "--access-mode=restricted"
+    env:
+      DATABASE_URI: "${ZAPPY_DATABASE_URI}"
     serverInstructions: "Access and analyze Zappy Postgres databases with read-only queries."
     startup: true
   postgres-rtf:
