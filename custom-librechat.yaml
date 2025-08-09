@@ -44,27 +44,29 @@ mcpServers:
     command: uvx
     args:
       - "postgres-mcp"
-      - "--access-mode=restricted"
+      - "--access-mode=unrestricted"
     env:
       DATABASE_URI: "${ZAPPY_DATABASE_URI}"
     serverInstructions: "Access and analyze Zappy Postgres databases with read-only queries."
     startup: true
   postgres-rtf:
     type: stdio
-    command: npx
+    command: uvx
     args:
-      - "-y"
-      - "@modelcontextprotocol/server-postgres"
-      - "${RTF_DATABASE_URI}"
+      - "postgres-mcp"
+      - "--access-mode=unrestricted"
+    env:
+      DATABASE_URI: "${RTF_DATABASE_URI}"
     serverInstructions: "Access and analyze Real Time Feedback (RTF) Postgres databases with read-only queries."
     startup: true
   postgres-usa-rs:
     type: stdio
-    command: npx
+    command: uvx
     args:
-      - "-y"
-      - "@modelcontextprotocol/server-postgres"
-      - "${USARS_DATABASE_URI}"
+      - "postgres-mcp"
+      - "--access-mode=unrestricted"
+    env:
+      DATABASE_URI: "${USARS_DATABASE_URI}"
     serverInstructions: "Access and analyze USA Restaurant Suppliers (USA-RS) Postgres databases with read-only queries."
     startup: true
   fetch:
