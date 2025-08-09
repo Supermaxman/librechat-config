@@ -9,6 +9,15 @@ interface:
   runCode: true
 
 webhooks:
+  # /api/webhooks/outlook
+  outlook-email-notify:
+    # MaxAI
+    agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+    user: "${WEBHOOK_USER}"
+    prompt: "A new email has been received. Please draft a response:"
+    auth:
+      type: "microsoft"
+      clientState: "${OUTLOOK_WEBHOOK_CLIENT_STATE}"
   # /api/webhooks/test
   test:
     # MaxAI
