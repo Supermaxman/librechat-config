@@ -14,12 +14,12 @@ webhooks:
     # MaxAI
     agent_id: 'agent_aVd_ioFfqYHiBqWczltzt'
     user: 'max@aiescape.io'
-    prompt: "A new request:"
+    prompt: "Please process this request:"
     auth:
       type: "header"
       header: "Authorization"
       prefix: "Bearer "
-      secret: "TEST"
+      secret: "${TEST_SECRET}"
   # email_received:
   #   agent_id: 'agent-email'
   #   user: 'admin@example.com' # user's email; if your ID is the same as email, reuse it here
