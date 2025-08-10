@@ -97,7 +97,7 @@ mcpServers:
     args:
       - "-y"
       - "@adenot/mcp-google-search"
-    serverInstructions: "Google search MCP tools"
+    serverInstructions: "Google search tools for finding up-to-date public information"
     startup: true
     env:
       GOOGLE_API_KEY: "${GOOGLE_API_KEY}"
@@ -107,7 +107,7 @@ mcpServers:
     command: uvx
     args:
       - "mcp-server-dexcom"
-    serverInstructions: true
+    serverInstructions: "Dexcom tools for monitoring Max's blood glucose values"
     startup: true
     env:
       DEXCOM_USERNAME: "${DEXCOM_USERNAME}"
@@ -117,7 +117,7 @@ mcpServers:
     command: uvx
     args:
       - "mcp-server-openai"
-    serverInstructions: true
+    serverInstructions: "OpenAI tools for monitoring AI Escape's spending in OpenAI's API"
     startup: true
     env:
       OPENAI_ADMIN_API_KEY: "${OPENAI_ADMIN_API_KEY}"
@@ -127,7 +127,7 @@ mcpServers:
     args:
       - "-y"
       - "@yitianyigexiangfa/zoom-mcp-server@latest"
-    serverInstructions: true
+    serverInstructions: "Zoom tools for managing max@aiescape.io's Zoom meetings"
     startup: true
     env:
       ZOOM_ACCOUNT_ID: "${ZOOM_ACCOUNT_ID}"
@@ -137,10 +137,14 @@ mcpServers:
     type: "streamable-http"
     initTimeout: 150000
     url: "https://mcp-spotify-oauth-example.max-daa.workers.dev/mcp"
-  outlook:
+    serverInstructions: "Spotify tools for managing Max's music"
+    startup: true
+  outlook-aiescape:
     type: "streamable-http"
     initTimeout: 150000
     url: "https://outlook-mcp-oauth.max-daa.workers.dev/mcp"
+    serverInstructions: "Outlook tools for managing max@aiescape.io"
+    startup: true
     webhooks:
       email-notify:
         user: "${WEBHOOK_USER}"
@@ -148,10 +152,27 @@ mcpServers:
         # prompt: "A new email has been received:"
       email-lifecycle:
         user: "${WEBHOOK_USER}"
-  quickbooks:
+        agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+  outlook-usa-rs:
+    type: "streamable-http"
+    initTimeout: 150000
+    url: "https://outlook-mcp-oauth.max-daa.workers.dev/mcp"
+    serverInstructions: "Outlook tools for managing max@shopusars.com"
+    startup: true
+    webhooks:
+      email-notify:
+        user: "${WEBHOOK_USER}"
+        agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+        # prompt: "A new email has been received:"
+      email-lifecycle:
+        user: "${WEBHOOK_USER}"
+        agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+  quickbooks-aiescape:
     type: "streamable-http"
     initTimeout: 150000
     url: "https://quickbooks-mcp-oauth.max-daa.workers.dev/mcp"
+    serverInstructions: "QuickBooks tools for managing AI Escape"
+    startup: true
   # busted, try different mcp option
   # sentry:
   #   command: npx
