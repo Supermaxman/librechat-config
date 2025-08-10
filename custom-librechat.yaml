@@ -29,7 +29,7 @@ mcpServers:
       DATABASE_URI: "${RTF_DATABASE_URI}"
     serverInstructions: "Access and analyze Real Time Feedback (RTF) Postgres databases with read-only queries."
     startup: true
-  postgres-usa-rs:
+  postgres-usars:
     type: stdio
     command: uvx
     args:
@@ -115,7 +115,7 @@ mcpServers:
       email-lifecycle:
         user: "${WEBHOOK_USER}"
         agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
-  outlook-usa-rs:
+  outlook-usars:
     type: "streamable-http"
     initTimeout: 150000
     url: "https://outlook-mcp-oauth.max-daa.workers.dev/mcp"
