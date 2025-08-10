@@ -167,6 +167,20 @@ mcpServers:
       email-lifecycle:
         user: "${WEBHOOK_USER}"
         agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+  outlook-zappy:
+    type: "streamable-http"
+    initTimeout: 150000
+    url: "https://outlook-mcp-oauth.max-daa.workers.dev/mcp"
+    serverInstructions: "Outlook tools for managing max@needzappy.com"
+    startup: true
+    webhooks:
+      email-notify:
+        user: "${WEBHOOK_USER}"
+        agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+        # prompt: "A new email has been received:"
+      email-lifecycle:
+        user: "${WEBHOOK_USER}"
+        agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
   quickbooks-aiescape:
     type: "streamable-http"
     initTimeout: 150000
