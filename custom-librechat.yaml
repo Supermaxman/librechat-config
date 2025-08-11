@@ -146,7 +146,7 @@ mcpServers:
   google-personal:
     type: "streamable-http"
     initTimeout: 150000
-    url: "https://outlook-mcp-oauth.max-daa.workers.dev/mcp"
+    url: "https://google-mcp-oauth.max-daa.workers.dev/mcp"
     serverInstructions: "Google tools for managing supermaxman1@gmail.com"
     startup: true
   quickbooks-aiescape:
