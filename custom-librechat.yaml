@@ -143,6 +143,12 @@ mcpServers:
       email-lifecycle:
         user: "${WEBHOOK_USER}"
         agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+  google-personal:
+    type: "streamable-http"
+    initTimeout: 150000
+    url: "https://outlook-mcp-oauth.max-daa.workers.dev/mcp"
+    serverInstructions: "Google tools for managing supermaxman1@gmail.com"
+    startup: true
   quickbooks-aiescape:
     type: "streamable-http"
     initTimeout: 150000
