@@ -149,6 +149,12 @@ mcpServers:
     url: "https://google-mcp-oauth.max-daa.workers.dev/mcp"
     serverInstructions: "Google tools for managing supermaxman1@gmail.com"
     startup: true
+  google-official:
+    type: "streamable-http"
+    initTimeout: 150000
+    url: "https://google-mcp-oauth.max-daa.workers.dev/mcp"
+    serverInstructions: "Google tools for managing maxwellweinzierl@gmail.com"
+    startup: true
   quickbooks-aiescape:
     type: "streamable-http"
     initTimeout: 150000
