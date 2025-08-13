@@ -152,7 +152,7 @@ mcpServers:
     webhooks:
       email-notify:
         user: "${WEBHOOK_USER}"
-        agent_id: "agent_0BtBBLwPny2SY4dWEYoLx"
+        agent_id: "agent_0jkvfgrS25LNo5PHvQVDa"
   google-official:
     type: "streamable-http"
     initTimeout: 150000
@@ -162,7 +162,7 @@ mcpServers:
     webhooks:
       email-notify:
         user: "${WEBHOOK_USER}"
-        agent_id: "agent_0BtBBLwPny2SY4dWEYoLx"
+        agent_id: "agent_0jkvfgrS25LNo5PHvQVDa"
   quickbooks-aiescape:
     type: "streamable-http"
     initTimeout: 150000
