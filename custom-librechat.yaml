@@ -149,12 +149,20 @@ mcpServers:
     url: "https://google-mcp-oauth.max-daa.workers.dev/mcp"
     serverInstructions: "Google tools for managing supermaxman1@gmail.com"
     startup: true
+    webhooks:
+      email-notify:
+        user: "${WEBHOOK_USER}"
+        agent_id: "agent_0BtBBLwPny2SY4dWEYoLx"
   google-official:
     type: "streamable-http"
     initTimeout: 150000
     url: "https://google-mcp-oauth.max-daa.workers.dev/mcp"
     serverInstructions: "Google tools for managing maxwellweinzierl@gmail.com"
     startup: true
+    webhooks:
+      email-notify:
+        user: "${WEBHOOK_USER}"
+        agent_id: "agent_0BtBBLwPny2SY4dWEYoLx"
   quickbooks-aiescape:
     type: "streamable-http"
     initTimeout: 150000
