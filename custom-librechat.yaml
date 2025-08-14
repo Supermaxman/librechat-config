@@ -149,12 +149,12 @@ mcpServers:
       email-notify:
         user: "${WEBHOOK_USER}"
         agent_id: "agent_0jkvfgrS25LNo5PHvQVDa"
-  quickbooks-aiescape:
-    type: "streamable-http"
-    initTimeout: 150000
-    url: "https://quickbooks-mcp-oauth.max-daa.workers.dev/mcp"
-    serverInstructions: "QuickBooks tools for managing AI Escape"
-    startup: true
+  # quickbooks-aiescape:
+  #   type: "streamable-http"
+  #   initTimeout: 150000
+  #   url: "https://quickbooks-mcp-oauth.max-daa.workers.dev/mcp"
+  #   serverInstructions: "QuickBooks tools for managing AI Escape"
+  #   startup: true
   # busted, try different mcp option
   # sentry:
   #   command: npx
