@@ -98,13 +98,13 @@ mcpServers:
   spotify:
     type: "streamable-http"
     initTimeout: 150000
-    url: "https://mcp-spotify-oauth-example.max-daa.workers.dev/mcp"
+    url: "https://mcp-spotify-oauth-example.ai-escape.workers.dev/mcp"
     serverInstructions: "Spotify tools for managing Max's music"
     startup: true
   outlook-aiescape:
     type: "streamable-http"
     initTimeout: 150000
-    url: "https://outlook-mcp-oauth.max-daa.workers.dev/mcp"
+    url: "https://outlook-mcp-oauth.ai-escape.workers.dev/mcp"
     serverInstructions: "Outlook tools for managing max@aiescape.io"
     startup: true
     webhooks:
@@ -118,7 +118,7 @@ mcpServers:
   outlook-usars:
     type: "streamable-http"
     initTimeout: 150000
-    url: "https://outlook-mcp-oauth.max-daa.workers.dev/mcp"
+    url: "https://outlook-mcp-oauth.ai-escape.workers.dev/mcp"
     serverInstructions: "Outlook tools for managing max@shopusars.com"
     startup: true
     webhooks:
@@ -132,7 +132,7 @@ mcpServers:
   google-personal:
     type: "streamable-http"
     initTimeout: 150000
-    url: "https://google-mcp-oauth.max-daa.workers.dev/mcp"
+    url: "https://google-mcp-oauth.ai-escape.workers.dev/mcp"
     serverInstructions: "Google tools for managing supermaxman1@gmail.com"
     startup: true
     webhooks:
@@ -142,19 +142,25 @@ mcpServers:
   google-official:
     type: "streamable-http"
     initTimeout: 150000
-    url: "https://google-mcp-oauth.max-daa.workers.dev/mcp"
+    url: "https://google-mcp-oauth.ai-escape.workers.dev/mcp"
     serverInstructions: "Google tools for managing maxwellweinzierl@gmail.com"
     startup: true
     webhooks:
       email-notify:
         user: "${WEBHOOK_USER}"
         agent_id: "agent_0jkvfgrS25LNo5PHvQVDa"
-  # quickbooks-aiescape:
-  #   type: "streamable-http"
-  #   initTimeout: 150000
-  #   url: "https://quickbooks-mcp-oauth.max-daa.workers.dev/mcp"
-  #   serverInstructions: "QuickBooks tools for managing AI Escape"
-  #   startup: true
+  quickbooks-aiescape:
+    type: "streamable-http"
+    initTimeout: 150000
+    url: "https://quickbooks-mcp-oauth.ai-escape.workers.dev/mcp"
+    serverInstructions: "QuickBooks tools for managing AI Escape"
+    startup: true
+  atlassian-usars:
+    type: "sse"
+    initTimeout: 150000
+    url: "https://mcp.atlassian.com/v1/sse"
+    serverInstructions: "Atlassian tools for managing USA-RS tasks in Jira"
+    startup: true
   # busted, try different mcp option
   # sentry:
   #   command: npx
@@ -530,45 +536,6 @@ endpoints:
           - nousresearch/hermes-3-llama-3.1-405b
           - nousresearch/hermes-3-llama-3.1-70b
           - nousresearch/nous-hermes-2-mixtral-8x7b-dpo
-          - '---OPENAI---'
-          - openai/chatgpt-4o-latest
-          - openai/codex-mini
-          - openai/gpt-3.5-turbo
-          - openai/gpt-3.5-turbo-0125
-          - openai/gpt-3.5-turbo-0613
-          - openai/gpt-3.5-turbo-1106
-          - openai/gpt-3.5-turbo-16k
-          - openai/gpt-3.5-turbo-instruct
-          - openai/gpt-4
-          - openai/gpt-4-0314
-          - openai/gpt-4-1106-preview
-          - openai/gpt-4-32k
-          - openai/gpt-4-32k-0314
-          - openai/gpt-4-turbo
-          - openai/gpt-4-turbo-preview
-          - openai/gpt-4.1
-          - openai/gpt-4.1-mini
-          - openai/gpt-4.1-nano
-          - openai/gpt-4.5-preview
-          - openai/gpt-4o
-          - openai/gpt-4o-2024-05-13
-          - openai/gpt-4o-2024-08-06
-          - openai/gpt-4o-2024-11-20
-          - openai/gpt-4o-mini
-          - openai/gpt-4o-mini-2024-07-18
-          - openai/gpt-4o-mini-search-preview
-          - openai/gpt-4o-search-preview
-          - openai/o1
-          - openai/o1-mini
-          - openai/o1-mini-2024-09-12
-          - openai/o1-preview
-          - openai/o1-preview-2024-09-12
-          - openai/o1-pro
-          - openai/o3
-          - openai/o3-mini
-          - openai/o3-mini-high
-          - openai/o4-mini
-          - openai/o4-mini-high
           - '---PERPLEXITY---'
           - perplexity/llama-3.1-sonar-large-128k-online
           - perplexity/llama-3.1-sonar-small-128k-online
