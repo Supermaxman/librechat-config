@@ -155,12 +155,13 @@ mcpServers:
     url: "https://quickbooks-mcp-oauth.ai-escape.workers.dev/mcp"
     serverInstructions: "QuickBooks tools for managing AI Escape"
     startup: true
-  atlassian-usars:
-    type: "sse"
-    initTimeout: 150000
-    url: "https://mcp.atlassian.com/v1/sse"
-    serverInstructions: "Atlassian tools for managing USA-RS tasks in Jira"
-    startup: true
+  # not supported for external callbacks yet
+  # atlassian-usars:
+  #   type: "sse"
+  #   initTimeout: 150000
+  #   url: "https://mcp.atlassian.com/v1/sse"
+  #   serverInstructions: "Atlassian tools for managing USA-RS tasks in Jira"
+  #   startup: true
   # busted, try different mcp option
   # sentry:
   #   command: npx
