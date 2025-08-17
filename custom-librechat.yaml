@@ -8,6 +8,15 @@ interface:
   webSearch: false
   runCode: true
 
+jobs:
+  morning-time:
+    user: "${WEBHOOK_USER}"
+    agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+    prompt: 'Create any missing time entries for today in Toggl Track from the outlook-aiescape calendar.'
+    schedule: '0 11 * * *' # at 11:00 am daily UTC (6 am CT)
+    # timezone: 'UTC' # defaults to UTC
+    # enabled: true # defaults to true
+
 mcpServers:
   postgres-zappy:
     type: stdio
