@@ -165,12 +165,12 @@ mcpServers:
     url: "https://quickbooks-mcp-oauth.ai-escape.workers.dev/mcp"
     serverInstructions: "QuickBooks tools for managing AI Escape"
     startup: true
-  toggl-track-aiescape:
+  toggl-track:
     type: stdio
     command: uvx
     args:
       - "mcp-server-toggl"
-    serverInstructions: "Toggl Track tools for monitoring working hours & project billing for Max at AI Escape."
+    serverInstructions: "Toggl Track tools for monitoring working hours & project billing for Max."
     startup: true
     env:
       TOGGL_API_KEY: "${TOGGL_API_KEY}"
