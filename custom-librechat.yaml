@@ -182,7 +182,7 @@ mcpServers:
   #   startup: true
   #   headers:
   #     # Authorization: API-Key ${AUTH_TOKEN}
-  #     Authorization: "API-Key {{PANDADOC_API_KEY}}"
+  #     Authorization: "API-Key ${PANDADOC_API_KEY}"
   hubspot-aiescape:
     type: stdio
     command: npx
@@ -192,7 +192,7 @@ mcpServers:
     serverInstructions: "HubSpot tools for managing max@aiescape.io's AI Escape HubSpot deals & contacts"
     startup: true
     env:
-      PRIVATE_APP_ACCESS_TOKEN: "{{HUBSPOT_ACCESS_TOKEN}}"
+      PRIVATE_APP_ACCESS_TOKEN: "${HUBSPOT_ACCESS_TOKEN}"
   # not supported for external callbacks yet
   # atlassian-usars:
   #   type: "sse"
