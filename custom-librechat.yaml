@@ -111,8 +111,13 @@ mcpServers:
       email-notify:
         user: "${WEBHOOK_USER}"
         agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
-        # prompt: "A new email has been received:"
       email-lifecycle:
+        user: "${WEBHOOK_USER}"
+        agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+      calendar-notify:
+        user: "${WEBHOOK_USER}"
+        agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+      calendar-lifecycle:
         user: "${WEBHOOK_USER}"
         agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
   outlook-usars:
@@ -125,8 +130,13 @@ mcpServers:
       email-notify:
         user: "${WEBHOOK_USER}"
         agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
-        # prompt: "A new email has been received:"
       email-lifecycle:
+        user: "${WEBHOOK_USER}"
+        agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+      calendar-notify:
+        user: "${WEBHOOK_USER}"
+        agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
+      calendar-lifecycle:
         user: "${WEBHOOK_USER}"
         agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
   google-personal:
