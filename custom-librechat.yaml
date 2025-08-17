@@ -174,6 +174,25 @@ mcpServers:
     startup: true
     env:
       TOGGL_API_KEY: "${TOGGL_API_KEY}"
+  # pandadoc-aiescape:
+  #   type: "streamable-http"
+  #   initTimeout: 150000
+  #   url: "https://developers.pandadoc.com/mcp"
+  #   serverInstructions: "PandaDoc tools for managing AI Escape contracts"
+  #   startup: true
+  #   headers:
+  #     # Authorization: API-Key ${AUTH_TOKEN}
+  #     Authorization: "API-Key {{PANDADOC_API_KEY}}"
+  hubspot-aiescape:
+    type: stdio
+    command: npx
+    args:
+      - "-y"
+      - "@hubspot/mcp-server"
+    serverInstructions: "HubSpot tools for managing max@aiescape.io's AI Escape HubSpot deals & contacts"
+    startup: true
+    env:
+      HUBSPOT_ACCESS_TOKEN: "{{HUBSPOT_ACCESS_TOKEN}}"
   # not supported for external callbacks yet
   # atlassian-usars:
   #   type: "sse"
