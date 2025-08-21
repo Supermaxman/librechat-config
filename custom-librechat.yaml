@@ -18,7 +18,7 @@ jobs:
     user: "${WEBHOOK_USER}"
     agent_id: "agent_0jkvfgrS25LNo5PHvQVDa"
     prompt: 'Run the startGmailWatch tool to refresh Gmail notifications for all google servers.'
-    schedule: '0 11 * * *' # at 11:00 am daily UTC (6 am CT)
+    schedule: '0 10 * * *' # at 10:00 am daily UTC (5 am CT)
 
 mcpServers:
   postgres-zappy:
