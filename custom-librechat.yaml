@@ -9,13 +9,16 @@ interface:
   runCode: true
 
 jobs:
-  morning-time:
+  renew-outlook:
     user: "${WEBHOOK_USER}"
     agent_id: "agent_aVd_ioFfqYHiBqWczltzt"
-    prompt: 'Create any missing time entries for today in Toggl Track from the outlook-aiescape calendar.'
+    prompt: 'Create any missing time entries for today in Toggl Track from the outlook-aiescape calendar. Also, run the listSubscriptions tool for every outlook server and refresh any existing subscriptions. Create a new subscription if none are available to refresh for each outlook server.'
     schedule: '0 11 * * *' # at 11:00 am daily UTC (6 am CT)
-    # timezone: 'UTC' # defaults to UTC
-    # enabled: true # defaults to true
+  renew-google:
+    user: "${WEBHOOK_USER}"
+    agent_id: "agent_0jkvfgrS25LNo5PHvQVDa"
+    prompt: 'Run the startGmailWatch tool to refresh Gmail notifications for all google servers.'
+    schedule: '0 11 * * *' # at 11:00 am daily UTC (6 am CT)
 
 mcpServers:
   postgres-zappy:
